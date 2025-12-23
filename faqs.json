@@ -1,0 +1,26 @@
+[
+  {
+    "id": "reset_password",
+    "question": "How do I reset my password?",
+    "answer": "To reset your password, go to Settings → Security and click 'Reset Password'. You will receive a reset link at your registered email address. If you don't receive it in 5-10 minutes, check spam or contact support.",
+    "tags": ["password", "reset", "security"]
+  },
+  {
+    "id": "refund_policy",
+    "question": "What is your refund policy?",
+    "answer": "Our refund policy allows refunds within 30 days of purchase if you're not satisfied. To request a refund, open a support ticket with your order ID and reason. Refunds are processed to the original payment method and may take 5-7 business days.",
+    "tags": ["refund", "returns", "payment"]
+  },
+  {
+    "id": "contact_support",
+    "question": "How can I contact support?",
+    "answer": "You can contact support via email at support@example.com or call +1-800-555-0199 (Mon-Fri, 9am-6pm). For faster response, include your account email and order ID in the message.",
+    "tags": ["contact", "support", "phone", "email"]
+  },
+  {
+    "id": "subscription_plans",
+    "question": "What subscription plans do you offer?",
+    "answer": "We offer Basic ($10/month), Pro ($25/month), and Enterprise (contact sales) plans. Visit the Pricing page for features included in each plan, or contact sales for enterprise quotes.",
+    "tags": ["subscription", "pricing", "plans"]
+  }
+]
