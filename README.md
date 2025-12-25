@@ -19,13 +19,14 @@ This project implements an AI-based customer support chatbot developed as part o
 - HTML, CSS, JavaScript
 
 ## Project Structure
-    customer_support_bot/
-    ├── app.py
-    ├── test.html
-    ├── faqs.json
-    ├── requirements.txt
-    ├── demo.gif
-    └── README.md
+├── app.py
+├── test.html
+├── faqs.json
+├── requirements.txt
+├── demo.gif
+├── README.md
+├── .gitignore
+└── env.example
 
 
 ## System Overview
