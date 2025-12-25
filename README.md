@@ -1,7 +1,7 @@
 # AI Customer Support Bot
 
 ## Description
-This project implements an AI-based customer support chatbot developed as part of an academic assignment. The system answers common customer queries using a predefined FAQ dataset and uses a Large Language Model (LLM) for handling queries not covered by the FAQs. It also includes rule-based escalation for unsafe or unsupported requests and maintains session-based conversation history.
+This project implements an AI-based customer support chatbot developed as part of an academic assignment. The system answers common customer queries using a predefined FAQ dataset and uses a Large Language Model (LLM) for handling queries not covered by the FAQs. It also includes rule-based escalation for unsafe or unsupported requests and maintains session-based conversation history stored using SQLite.
 
 ## Features
 - FAQ-based question answering
@@ -34,6 +34,13 @@ This project implements an AI-based customer support chatbot developed as part o
 3. If no FAQ matches, the query is processed by the AI model.
 4. Unsafe queries trigger escalation instead of an AI response.
 5. Conversation history is stored using a session identifier.
+
+## How to Run
+
+1. Install dependencies: pip install -r requirements.txt
+2. Create a `.env` file in the project root and add: GROQ_API_KEY=your_api_key_here
+3. Run the application: python customer_support_bot/app.py
+4. Open your browser and go to: http://localhost:5000
 
 ## Demo
 ![Working Demo](demo.gif)
