@@ -1,5 +1,8 @@
 # AI Customer Support Bot
 
+## GitHub Repository
+GitHub link: https://github.com/blitz-blaze7/AI-Customer-Support-Bot
+
 ## Description
 This project implements an AI-based customer support chatbot developed as part of an academic assignment. The system answers common customer queries using a predefined FAQ dataset and uses a Large Language Model (LLM) for handling queries not covered by the FAQs. It also includes rule-based escalation for unsafe or unsupported requests and maintains session-based conversation history stored using SQLite.
 
