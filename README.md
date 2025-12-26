@@ -45,7 +45,7 @@ This project implements an AI-based customer support chatbot developed as part o
 
 1. Install dependencies: pip install -r requirements.txt
 2. Create a `.env` file in the project root and add: GROQ_API_KEY=your_api_key_here
-3. Run the application: python customer_support_bot/app.py
+3. Run the application: python app.py
 4. Open your browser and go to: http://localhost:5000
 
 ## Demo
