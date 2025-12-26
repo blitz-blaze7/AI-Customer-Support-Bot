@@ -41,6 +41,24 @@ This project implements an AI-based customer support chatbot developed as part o
 4. Unsafe queries trigger escalation instead of an AI response.
 5. Conversation history is stored using a session identifier.
 
+## Prompt Engineering & Logic
+To ensure accurate and safe responses, the following prompts and logic were implemented:
+
+### 1. System Prompt
+This is the "master instruction" sent to the LLM (Llama 3.1) for every request to define its persona and safety boundaries:
+> "You are a helpful and concise customer support assistant. If the user's request is illegal, harmful, or requires human intervention, reply EXACTLY with the token: ESCALATE_TO_AGENT"
+
+### 2. Escalation Logic
+The system uses a two-tier escalation strategy:
+- **Keyword Trigger:** If the user's query contains dangerous terms (e.g., *hack, fraud, exploit, breach*), the system bypasses the AI and immediately triggers an escalation response.
+- **AI-Driven Trigger:** If the LLM determines a request is harmful or out-of-scope based on the system prompt, it returns a specific token (`ESCALATE_TO_AGENT`), which the backend recognizes to trigger a human-handoff message.
+
+### 3. Contextual Memory
+The bot maintains conversation history by retrieving previous messages from an SQLite database and passing them to the LLM in the following format to ensure continuity:
+- `{"role": "system", "content": system_prompt}`
+- `{"role": "user", "content": previous_user_message}`
+- `{"role": "assistant", "content": previous_bot_response}`
+
 ## How to Run
 
 1. Install dependencies: pip install -r requirements.txt
